@@ -9,6 +9,10 @@ public class StreamApiFeatures {
 		String[] strArray = new String[] {"january","february","march","april","may","jun","july","august","september","october","november","december"};
 		List<String> list = Arrays.asList(strArray);
 		list.stream().forEach(System.out::println);
+		
+		/*filter predicate is used to filter the values*/
+		System.out.println("************************************************************");
+		list.stream().filter(f -> f.startsWith("j", 0)).forEach(System.out::println);
 
 	}
 }
